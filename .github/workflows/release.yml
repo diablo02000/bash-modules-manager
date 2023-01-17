@@ -16,7 +16,7 @@ jobs:
         uses: cycjimmy/semantic-release-action@v3
         with:
           branch: main
-          semantic_version: 20.0.2
+          semantic_version: 19
           extra_plugins: |
             @semantic-release/commit-analyzer
             @semantic-release/release-notes-generator

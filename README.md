@@ -7,7 +7,7 @@ Bash script to easily downlaod and install bash modules.
 ## Usage
 
 ```bash
-$ ./bash-modules-manager.sh -u/--url [-v/--version]
+./bash-modules-manager.sh -u/--url [-v/--version]
 ```
 
 - url: Git repository url.
@@ -18,7 +18,7 @@ $ ./bash-modules-manager.sh -u/--url [-v/--version]
 - Get `log4bash` module:
 
 ```bash
-$ ./bash-modules-manager.sh -u https://github.com/diablo02000/log4bash.git
+./bash-modules-manager.sh -u https://github.com/diablo02000/log4bash.git
 ```
 
 > **_NOTE:_** By default, the tool take the main branch.
@@ -26,7 +26,7 @@ $ ./bash-modules-manager.sh -u https://github.com/diablo02000/log4bash.git
 - Get the tag `1.0.2` of `log4bash` module:
 
 ```bash
-$ ./bash-modules-manager.sh -u https://github.com/diablo02000/log4bash.git -v 1.0.2
+./bash-modules-manager.sh -u https://github.com/diablo02000/log4bash.git -v 1.0.2
 ```
 
 ## Configure

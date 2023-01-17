@@ -1,0 +1,30 @@
+name: Linter
+
+on:
+  push:
+    branches-ignore:
+      - master
+      - main
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Shellcheck
+      uses: ludeeus/action-shellcheck@master
+      with:
+        check_together: 'yes'
+        severity: warning
+      env:
+        SHELLCHECK_OPTS: --external-sources
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Run mdl
+      uses: actionshub/markdownlint@main
+      with:
+        filesToIgnoreRegex: "CHANGELOG.md"
